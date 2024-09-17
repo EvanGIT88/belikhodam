@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khodam 88</title>
+  <link href="/src/css/output.css" rel="stylesheet">
+  <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-XTBfFCTsI8VuO6HN"></script>
+</head>
+<body class="bg-khodam-bg flex flex-col bg-no-repeat laptop:bg-cover dekstop:bg-cover tablet:bg-auto phone:bg-auto transition-all duration-700 ease-linear delay-1000" id="bodyCon">
+  <div class="pb-40 hidden" id="space"></div>
+  <div class="hidden justify-center transition-all duration-700 delay-300 ease-linear pb-5 opacity-0" id="loader">
+    <div class="w-52 h-52 border-8 text-blue-400 text-4xl flex items-center justify-center animate-spin border-red-600 shadow-md border-t-black shadow-red-600 rounded-full"></div>
+  </div>
+  <p class="font-dotgothic text-red-600 text-3xl text-center hidden transition-all duration-700 delay-500 ease-linear opacity-0" id="loaderText">Mengisi khodam</p>
+  <p class="font-dotgothic text-red-600 text-6xl text-center hidden transition-all duration-700 delay-500 ease-linear" id="title"></p>
+  <p class="font-dotgothic text-red-600 text-5xl text-center hidden transition-all duration-700 delay-500 ease-linear mt-5" id="namaKhodam"></p>
+  <p class="font-dotgothic text-red-600 text-4xl text-center hidden transition-all duration-700 delay-500 ease-linear mt-5" id="powerKhodam"></p>
+  <header class="flex flex-col gap-3 mt-5 transition-all duration-700 delay-300 ease-linear" id="headerCon">
+    <h1 class="font-anton text-red-600 text-8xl text-stroke-2 text-center">Khodam 88</h1>
+    <h3 class="font-anton text-pink-700 text-3xl text-stroke-2 text-center">Ketik nama kalian</h3>
+  </header>
+    <main class="flex flex-col mt-20 transition-all duration-700 delay-700 ease-linear" id="mainCon">
+      <div id="isiBody" class="flex flex-col group bg-slate-300 w-80 p-3 m-auto rounded-lg drop-shadow-lg mt-2 hover:bg-slate-500">
+       <div id="isiHeader" class="flex flex-row gap-x-32">
+        <h2 id="isiText" class="font-anton text-red-300 text-3xl text-left text-stroke group-hover:text-red-500 select-none">Isi Khodam</h2>
+        <svg id="arrowUp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+          <polygon points="12 6.586 3.293 15.293 4.707 16.707 12 9.414 19.293 16.707 20.707 15.293 12 6.586"/>
+        </svg> 
+        <svg id="arrowDown" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="hidden">
+          <polygon points="12 17.414 3.293 8.707 4.707 7.293 12 14.586 19.293 7.293 20.707 8.707 12 17.414"/>
+        </svg>
+      </div>
+
+      <form id="isiForm" name="isiForm" class="hidden mt-3">
+        <div class="flex flex-col gap-y-2" id="bodyForm">
+          <label for="namaDepan" class="font-anton text-red-300 text-lg text-stroke">Nama depan:</label>
+          <input id="namaDepan" type="text" name="namaDpn" class="text-2xl rounded">
+          <label for="namaBelakang" class="font-anton text-red-300 text-lg text-stroke">Nama belakang:</label>
+          <input id="namaBelakang" type="text" name="namaBlk" class="text-2xl rounded">
+          <p id="invalid" class="font-anton text-red-500 text-lg hidden mt-2"></p>
+          <input type="submit" value="Isi Khodam" class="font-anton border-transparent text-red-300 text-xl text-stroke bg-red-600 rounded-lg mt-2">
+        </div>
+      </form> 
+      </div>
+      
+      <div class="group bg-slate-300 w-80 p-3 m-auto rounded-lg drop-shadow-lg mt-2 hover:bg-slate-500">
+        <button id="cek" class="font-anton text-red-300 text-3xl text-left text-stroke group-hover:text-red-500">Cek Khodam</button>
+      </div>
+    </main>
+    <script src="/src/script/script.js"></script>
+</body>
+</html>
